@@ -42,6 +42,41 @@ Import the schema and sample data before running the queries.
 
 ---
 
-## 📁 Directory Structure
+# 🔍 Subqueries – Airbnb Clone Database Project
 
-Ensure your files are placed correctly:
+This directory contains SQL scripts demonstrating the use of **subqueries**, both **non-correlated** and **correlated**, in the Airbnb Clone database.
+
+These queries help analyze data relationships across multiple tables and are essential for advanced reporting and filtering.
+
+---
+
+## 🎯 Objective
+
+To write and understand:
+- **Non-correlated subqueries**: Independent of the outer query
+- **Correlated subqueries**: Dependent on the outer query, executed row-by-row
+
+---
+
+## 🧾 Queries Overview
+
+| Query Type | Description |
+|------------|-------------|
+| Non-Correlated Subquery | Find properties with an average rating > 4.0 |
+| Correlated Subquery | Find users who have made more than 3 bookings |
+
+---
+
+## 🛠️ Requirements
+
+To run these queries:
+- A PostgreSQL or MySQL database instance
+- The Airbnb Clone schema must be set up with the following tables:
+  - `Users`
+  - `Bookings`
+  - `Properties`
+  - `Reviews`
+
+Import the schema and sample data before running the queries.
+
+---
