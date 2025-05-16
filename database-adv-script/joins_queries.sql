@@ -18,6 +18,7 @@ INNER JOIN
 
 -- 2. LEFT JOIN: Retrieve all properties and their reviews, including properties with no reviews.
 -- This query ensures all properties appear even if they have no associated reviews.
+-- Ordered by property_id for readability.
 
 SELECT 
     p.id AS property_id,
@@ -29,7 +30,9 @@ SELECT
 FROM 
     Properties p
 LEFT JOIN 
-    Reviews r ON p.id = r.property_id;
+    Reviews r ON p.id = r.property_id
+ORDER BY 
+    p.id;
 
 
 -- 3. FULL OUTER JOIN: Retrieve all users and all bookings, even if:
