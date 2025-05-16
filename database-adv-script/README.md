@@ -80,3 +80,45 @@ To run these queries:
 Import the schema and sample data before running the queries.
 
 ---
+
+# 📊 SQL Aggregations and Window Functions – Airbnb Clone Database Project
+
+This directory contains SQL scripts demonstrating the use of **aggregation functions** and **window functions** to analyze Airbnb Clone data.
+
+These queries help extract insights like:
+- How many bookings each user has made
+- Which properties are most booked
+- Ranking properties using `ROW_NUMBER()` and `RANK()`
+
+---
+
+## 🎯 Objective
+
+To use:
+- **SQL Aggregation** (`COUNT`, `GROUP BY`) to summarize data
+- **Window Functions** (`ROW_NUMBER`, `RANK`) to rank records within datasets
+
+---
+
+## 🧾 Queries Overview
+
+| Query | Description |
+|-------|-------------|
+| Aggregation | Count total bookings per user |
+| Window Function | Rank properties by total number of bookings |
+
+---
+
+## 🛠️ Requirements
+
+To run these queries:
+- A PostgreSQL or MySQL database instance
+- The Airbnb Clone schema must be set up with the following tables:
+  - `Users`
+  - `Bookings`
+  - `Properties`
+
+Import the schema and sample data before running the queries.
+
+---
+
